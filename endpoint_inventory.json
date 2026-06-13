@@ -1,0 +1,28 @@
+{
+  "client": "oklink",
+  "title": "OKLink Reverse Client",
+  "base_url": "https://www.oklink.com",
+  "auth": "browser-derived x-apiKey generated from OKLink web key and timestamp rotation",
+  "endpoints": [
+    ["GET", "/api/explorer/v2/{chain}/home-blocks", "recent blocks"],
+    ["GET", "/api/explorer/v2/{chain}/blocks", "block list"],
+    ["GET", "/api/explorer/v2/{chain}/blocks/transactions", "block transactions"],
+    ["GET", "/api/explorer/v2/{chain}/block/transactions", "block transactions fallback"],
+    ["GET", "/api/explorer/v1/{chain}/transactionsNoRestrict", "UTXO/no-restrict transactions"],
+    ["GET", "/api/explorer/v2/{chain}/blocks/tokenTransfers", "block token transfers"],
+    ["GET", "/api/explorer/v2/{chain}/block/{height}/transfers/condition/token", "block token transfer fallback"],
+    ["GET", "/api/explorer/v2/{chain}/block/{height}/transfers/condition/nft", "block NFT transfers"],
+    ["GET", "/api/explorer/v2/{chain}/blocks/internalTransactions", "block internal transactions"],
+    ["GET", "/api/explorer/v2/{chain}/block/internalTransactions", "block internal transactions fallback"],
+    ["GET", "/api/explorer/v2/{chain}/blocks/event", "block contract events"],
+    ["GET", "/api/explorer/v2/{chain}/blocks/message", "block messages"],
+    ["GET", "/api/explorer/v1/{chain}/transactions/{tx_hash}/logs", "transaction logs"],
+    ["GET", "/api/explorer/v2/{chain}/tokens/{address}", "token metadata"],
+    ["GET", "/api/explorer/v2/{chain}/addresses/{address}/transactionsByClassfy/condition", "address transactions"],
+    ["GET", "/api/explorer/v1/{chain}/addresses/{address}/internalTx/condition", "address internal transactions"],
+    ["GET", "/api/explorer/v2/{chain}/addresses/{address}/transfers/condition/token", "address token transfers"],
+    ["GET", "/api/explorer/v1/{chain_slug}/transactions?type=pending", "pending transactions"],
+    ["GET", "/priapi/v1/lite/evm/block/detail/transactions", "lite EVM block transactions"]
+  ],
+  "source": "/home/fsdf1234/Projects/oklink-engine"
+}
