@@ -2,6 +2,11 @@
 
 Python client for endpoints used by [https://www.oklink.com](https://www.oklink.com). The implementation is browser/reverse-engineered from `oklink-engine` and mirrors OKLink web explorer REST calls.
 
+## Educational Use
+
+This project is published as part of an educational process for studying web/API clients and data access patterns. It is unofficial, not affiliated with or endorsed by the upstream service, and should be used responsibly according to the target site's terms and applicable law.
+
+
 ## Install
 
 ```bash
